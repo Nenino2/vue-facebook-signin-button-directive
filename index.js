@@ -28,7 +28,7 @@ export default Vue.directive('facebook-signin-button', {
         } else {
           Onfail()
         }
-      })
+      }, {scope: 'email'})
     }
     function OnSuccess(token) {
       vnode.context.OnFacebookAuthSuccess(token)
